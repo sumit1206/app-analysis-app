@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--Root container-->
+    <FrameLayout
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin10"
+        tools:ignore="UselessParent">
+        <View
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/round_floating_button"
+            android:backgroundTint="#90000000">
+        </View>
+        <!--View while view is collapsed-->
+        <FrameLayout
+            android:id="@+id/collapse_view"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_floating_button">
+            </View>
+
+            <!--Icon of floating widget -->
+<!--            <ImageView-->
+<!--                android:id="@+id/collapsed_iv"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:background="@drawable/ic_close_black_24dp"-->
+<!--                tools:ignore="ContentDescription"/>-->
+
+            <TextView
+                android:id="@+id/collapsed_iv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:text="X"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:padding="@dimen/margin5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin25"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/floating_info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_gravity="end">
+
+<!--            <TextView-->
+<!--                android:id="@+id/floating_total_iteration"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textAlignment="center"/>-->
+
+            <TextView
+                android:id="@+id/floating_left_iteration"
+                android:layout_width="@dimen/margin25"
+                android:layout_height="@dimen/margin25"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size16"
+                android:textAlignment="center"
+                android:background="@drawable/round_floating_button"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

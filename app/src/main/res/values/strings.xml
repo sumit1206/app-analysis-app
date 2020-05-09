@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">App Analyzer</string>
+    <string name="permission_not_granted">Permission needed !!</string>
+    <string name="click_here">Click here</string>
+    <string name="cannot_open_activity">Cannot open while recording on going</string>
+    <string name="app_to_record">App to record</string>
+    <string name="save">SAVE</string>
+    <string name="app_not_installed">app not installed</string>
+    <string name="saved">changes saved</string>
+    <string name="select_package">Selected package:</string>
+    <string name="selected_package">Selected package:</string>
+    <string name="selected_uri">Selected Uri:</string>
+    <string name="settings">Settings</string>
+    <string name="auto_start">Auto Start</string>
+    <string name="auto_record">Auto Record</string>
+    <string name="interation">Iteration</string>
+    <string name="no_app_selected">No app selected</string>
+    <string name="invalid_iteration">Iteration invalid</string>
+    <string name="audio_uploaded">Audio  </string>
+    <string name="log_uploaded">Log </string>
+    <string name="session_id">Session Id:</string>
+    <string name="recording_time">Playback Time</string>
+    <string name="seconds">secs</string>
+    <string name="kill_process">Kill process on app kill</string>
+    <string name="history">History</string>
+    <string name="upload">Upload</string>
+</resources>
